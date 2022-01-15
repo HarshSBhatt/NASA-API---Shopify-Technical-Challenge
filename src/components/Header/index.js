@@ -20,7 +20,7 @@ function Header() {
         <HeaderItem title="SEARCH" Icon={SearchIcon} />
         <HeaderItem title="ACCOUNT" Icon={UserIcon} />
       </div>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between flex-col-reverse md:flex-row">
         <h2 className="text-2xl font-mono font-bold">Spacestagram</h2>
         <Image
           className="object-contain"
