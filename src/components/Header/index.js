@@ -20,12 +20,15 @@ function Header() {
         <HeaderItem title="SEARCH" Icon={SearchIcon} />
         <HeaderItem title="ACCOUNT" Icon={UserIcon} />
       </div>
-      <Image
-        className="object-contain"
-        src="/nasa-480.png"
-        width={200}
-        height={100}
-      />
+      <div className="flex items-center justify-between">
+        <h2 className="text-2xl font-mono font-bold">Spacestagram</h2>
+        <Image
+          className="object-contain"
+          src="/nasa-480.png"
+          width={200}
+          height={100}
+        />
+      </div>
     </header>
   );
 }

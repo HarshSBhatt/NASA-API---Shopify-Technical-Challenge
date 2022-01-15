@@ -6,7 +6,7 @@ export default function Home({ photos }) {
   return (
     <div>
       <Head>
-        <title>Shopify Technical Challenge</title>
+        <title>Spacestagram | Shopify Technical Challenge</title>
         <link rel="icon" href="/nasa-48.png" />
       </Head>
       <Results photos={photos} />
