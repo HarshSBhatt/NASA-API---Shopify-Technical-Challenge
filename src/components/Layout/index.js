@@ -1,12 +1,12 @@
-const { default: Footer } = require("components/Footer");
-const { default: Header } = require("components/Header");
+import Footer from "components/Footer";
+import Header from "components/Header";
 
 function Layout({ children }) {
   return (
     <>
       <Header />
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
