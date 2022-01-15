@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Thumbnail from "./Thumbnail";
 import FlipMove from "react-flip-move";
 import { useRouter } from "next/router";

@@ -1,5 +1,6 @@
 import { forwardRef, useEffect, useState } from "react";
 import Image from "next/image";
+import { HeartIcon } from "@heroicons/react/outline";
 
 const Thumbnail = forwardRef(({ photo, onClick, handleLikeClick }, ref) => {
   const [likedId, setLikedId] = useState();
@@ -49,19 +50,15 @@ const Thumbnail = forwardRef(({ photo, onClick, handleLikeClick }, ref) => {
           </p>
           <div className="pt-1">
             {likedId === photo.id ? (
-              <button
+              <HeartIcon
+                className="fill-red-500 text-red-500 h-6 mb-1 group-hover:animate-bounce"
                 onClick={(e) => handleUnlikeImageClick(e, photo.id)}
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded"
-              >
-                Unlike
-              </button>
+              />
             ) : (
-              <button
+              <HeartIcon
+                className="h-6 mb-1 group-hover:animate-bounce"
                 onClick={(e) => handleLikeImageClick(e, photo.id)}
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded"
-              >
-                Like
-              </button>
+              />
             )}
           </div>
         </div>
